@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Loading from './components/Loading';
 
 ReactDOM.render(
   <StrictMode>
-    <Suspense fallback={<div>loading</div>}>
+    <Suspense fallback={<Loading />}>
       <App />
     </Suspense>
   </StrictMode>,
